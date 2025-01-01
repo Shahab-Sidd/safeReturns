@@ -60,7 +60,7 @@ const LoginPage = () => {
       >
         <Image
           alt="strategy-illustration"
-          src={"/stock1.jpeg"}
+          src={"../../public/stock1.jpeg"}
           style={{
             width: "100%",
             maxWidth: "900px",
