@@ -60,7 +60,7 @@ const LoginPage = () => {
       >
         <Image
           alt="strategy-illustration"
-          src={"../../public/stock1.jpeg"}
+          src={"./public/stock1.jpeg"}
           style={{
             width: "100%",
             maxWidth: "900px",
@@ -116,7 +116,7 @@ const LoginPage = () => {
         <Card sx={{ p: 6 }}>
           <Image
             alt="strategy-illustration"
-            src={"../../public/loginImg.jpeg"}
+            src={"./loginImg.jpeg"}
             style={{
               width: "100%",
               maxWidth: "400px",
