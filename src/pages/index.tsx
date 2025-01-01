@@ -116,7 +116,7 @@ const LoginPage = () => {
         <Card sx={{ p: 6 }}>
           <Image
             alt="strategy-illustration"
-            src={"/loginImg.jpeg"}
+            src={"../../public/loginImg.jpeg"}
             style={{
               width: "100%",
               maxWidth: "400px",
