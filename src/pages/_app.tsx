@@ -25,6 +25,15 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
     <>
       <Head>
         <link rel="icon" href="/favicon.ico" />
+         <meta
+              name="description"
+              content={`Safe Returns`}
+            />
+            <meta name="keywords" content="Safe Returns" />
+            <meta
+              name="viewport"
+              content="initial-scale=1, width=device-width"
+            />
       </Head>
       <Component
         className={`${geistSans.variable} ${geistMono.variable}`}
