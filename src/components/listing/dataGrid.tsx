@@ -13,7 +13,7 @@ const Datagrid: React.FC<DatagridProps> = ({ rows, columns }) => {
       <DataGrid
         rows={rows}
         columns={columns}
-        rowHeight={38}
+        rowHeight={37.5}
         initialState={{
           pagination: {
             paginationModel: { pageSize: 10, page: 0 },
