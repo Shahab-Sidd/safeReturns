@@ -68,7 +68,7 @@ const LoginPage = () => {
             borderRadius: "10px",
           }}
           width={650}
-          height={415}
+          height={330}
         />
         <Typography
           variant="body1"
