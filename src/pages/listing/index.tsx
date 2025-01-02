@@ -88,7 +88,7 @@ const ListingPage = () => {
 
       <Box
         sx={{
-          padding: "20px 40px",
+          padding: "5px 40px 20px 40px",
           backgroundColor: "#f9f9f9",
           borderRadius: 1,
         }}
@@ -98,8 +98,8 @@ const ListingPage = () => {
             sx={{
               mt: 0,
               pr: 6,
-              pt: 2,
-              pb: 2,
+              pt: 0.2,
+              pb: 1,
               display: "flex",
               flexDirection: "column",
               // gap: 3,
