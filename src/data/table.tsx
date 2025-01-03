@@ -28,6 +28,16 @@ export const rows: Row[] = [
   { id: 20, month: "Dec-23", returns: 0.65, amount: 13012 },
   { id: 21, month: "Jan-24", returns: 0.18, amount: 3674 },
   { id: 22, month: "Feb-24", returns: 0.1, amount: 2047 },
+  { id: 23, month: "Mar-24", returns: 0.13, amount: 2645 },
+  { id: 24, month: "Apr-24", returns: 0.09, amount: 1871 },
+  { id: 25, month: "May-24", returns: 0.45, amount: 9015 },
+  { id: 26, month: "Jun-24", returns: 0.25, amount: 5621 },
+  { id: 27, month: "Jul-24", returns: 0.34, amount: 6794 },
+  { id: 28, month: "Aug-24", returns: 0.19, amount: 3878 },
+  { id: 29, month: "Sep-24", returns: 0.47, amount: 9414 },
+  { id: 30, month: "Oct-24", returns: 1.02, amount: 20414 },
+  { id: 31, month: "Nov-24", returns: 0.23, amount: 4678 },
+  { id: 32, month: "Dec-24", returns: 0.65, amount: 13023 },
 ];
 
 export const columns = [
