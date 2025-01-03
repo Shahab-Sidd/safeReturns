@@ -15,6 +15,7 @@ import {
 import LogoutIcon from "@mui/icons-material/Logout";
 import { rows, columns } from "../../data/table";
 import Datagrid from "../../components/listing/dataGrid";
+import { useRouter } from "next/router";
 
 export const formattedColumns = columns.map((col) => {
   if (col.field === "amount") {
@@ -27,9 +28,10 @@ export const formattedColumns = columns.map((col) => {
 });
 
 const ListingPage = () => {
-  const [deposit, setDeposit] = useState(rows[rows.length - 1]?.amount || 0); // Initialize with the last amount
+  const [deposit, setDeposit] = useState(2000000); // Initialize with the last amount
   const [withdrawal, setWithdrawal] = useState(0);
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
+  const router = useRouter();
 
   const handleAvatarClick = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorEl(event.currentTarget);
@@ -41,6 +43,7 @@ const ListingPage = () => {
 
   const handleLogout = () => {
     console.log("Logging out...");
+    router.push("/");
     // Add your logout logic here
     setAnchorEl(null);
   };

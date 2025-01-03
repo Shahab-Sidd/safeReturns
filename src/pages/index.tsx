@@ -74,9 +74,8 @@ const LoginPage = () => {
           variant="body1"
           sx={{ marginBottom: 2, textAlign: "center" }}
         >
-          The name of website team has been actively involved in computer
-          programming and trading the forex markets since 2019. The name of
-          website strategy is a culmination of 5 years of programming experience
+          The SafeReturns team has been actively involved in computer
+          programming and trading the forex markets since 2019. The SafeReturns strategy is a culmination of 5 years of programming experience
           combined with 5 years of active trading, analysis, and observance of
           market consistencies when reacting to certain conditions.
         </Typography>
