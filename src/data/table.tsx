@@ -59,12 +59,13 @@ export const rows: Row[] = [
 
 export const columns = [
   { field: "month", headerName: "Month", width: 150, flex: 1 },
-  { field: "returns", headerName: "% Returns", width: 150, flex: 1{
+  { field: "returns", headerName: "% Returns", width: 150, flex: 1},
+  {
     field: "amount",
     headerName: "Amount",
     flex: 1,
-    renderCell: (params) => {
-      const { amount, status } = params.row;
+    renderCell: (params: any) => {
+      const { amount, status } = params?.row;
 
       const isNegative = amount < 0;
 
@@ -86,5 +87,6 @@ export const columns = [
         </span>
       );
     },
-  }, { field: "amount", headerName: "Amount", width: 150, flex: 1 },
+  }, 
+  { field: "amount", headerName: "Amount", width: 150, flex: 1 },
 ];
