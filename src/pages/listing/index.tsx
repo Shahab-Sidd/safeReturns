@@ -17,16 +17,6 @@ import { rows, columns } from "../../data/table";
 import Datagrid from "../../components/listing/dataGrid";
 import { useRouter } from "next/router";
 
-export const formattedColumns = columns.map((col) => {
-  if (col.field === "amount") {
-    return {
-      ...col,
-      renderCell: (params: any) => `₹${params.value.toLocaleString("en-IN")}`,
-    };
-  }
-  return col;
-});
-
 const ListingPage = () => {
   const [deposit, setDeposit] = useState(2000000); // Initialize with the last amount
   const [withdrawal, setWithdrawal] = useState(0);
@@ -155,7 +145,7 @@ const ListingPage = () => {
         <Typography variant="h6" gutterBottom>
           Monthly Returns
         </Typography>
-        <Datagrid rows={rows} columns={formattedColumns} />
+        <Datagrid rows={rows} columns={columns} />
       </Box>
     </>
   );
