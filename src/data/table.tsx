@@ -41,8 +41,8 @@ export const rows: Row[] = [
   { id: 32, month: "Dec-24", returns: 0.65, amount: 13023 },
 
   // Floating values
-  { id: 33, month: "Jan-25", returns: 0.09, amount: -1702, status: "Floating" },
-  { id: 34, month: "Feb-25", returns: 0.03, amount: -541, status: "Floating" },
+  { id: 33, month: "Jan-25", returns: null, amount: -1702, status: "Floating" },
+  { id: 34, month: "Feb-25", returns: null, amount: -541, status: "Floating" },
   { id: 35, month: "Mar-25", returns: null, amount: -2342, status: "Floating" },
   { id: 36, month: "Apr-25", returns: null, amount: -6946, status: "Floating" },
   { id: 37, month: "May-25", returns: null, amount: -12876, status: "Floating" },
@@ -71,7 +71,7 @@ export const columns = [
 
       return (
         <span>
-          ₹ {Math.abs(amount).toLocaleString()}
+          {isNegative ? "-" : ""}₹{Math.abs(amount).toLocaleString()}
           {status === "Floating" && (
             <span
               style={{
