@@ -87,6 +87,5 @@ export const columns = [
         </span>
       );
     },
-  }, 
-  { field: "amount", headerName: "Amount", width: 150, flex: 1 },
+  },
 ];
