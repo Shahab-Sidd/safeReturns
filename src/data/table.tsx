@@ -1,13 +1,6 @@
 export interface Row {
   id: number;
   month: string;
-  returns: number;
-  amount: number;
-}
-
-export interface Row {
-  id: number;
-  month: string;
   returns: number | null;
   amount: number;
   status?: "Floating";
