@@ -147,7 +147,7 @@ const ListingPage = () => {
           </Box>
           <Box>
             <Typography variant="h6" gutterBottom>
-              This is a 5 year lock in investment plan!
+              This is a 7 year lock in investment plan!
             </Typography>
           </Box>
         </Box>
